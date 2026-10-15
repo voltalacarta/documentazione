@@ -2,7 +2,7 @@
 titolo: Second brain
 stato: attivo
 creato: 2026-10-15
-aggiornato: 2026-10-15
+aggiornato: 2026-10-16
 tag: [conoscenza, second-brain, obsidian, foam]
 collegati: [0004, 0005]
 ---
@@ -39,6 +39,8 @@ second-brain/
 ├── .obsidian/       ← impostazioni condivise di Obsidian
 ├── .vscode/         ← impostazioni di Foam ed estensioni consigliate
 ├── .devcontainer/   ← ambiente Codespaces con Foam
+├── .github/         ← Action e script che generano grafo.md
+├── grafo.md         ← grafo delle note, generato in automatico
 └── CLAUDE.md        ← istruzioni per Claude
 ```
 
@@ -46,7 +48,8 @@ second-brain/
 
 | Dove | Strumento | Funzioni |
 | --- | --- | --- |
-| Browser (completo) | Codespaces + **Foam** | Wikilink, backlink, grafo, note giornaliere, modelli |
+| Ovunque, senza installare nulla | File **`grafo.md`** su github.com | Grafo dei collegamenti disegnato da GitHub, rigenerato da una GitHub Action a ogni modifica |
+| Browser (completo) | Codespaces + **Foam** | Wikilink, backlink, grafo interattivo, note giornaliere, modelli |
 | Browser (rapido) | github.dev + Foam | Modifica e link; alcune funzioni possono essere ridotte |
 | Telefono | **Obsidian** + plugin **Git** | Esperienza Obsidian completa |
 | Assistente | **Claude** | Smistare l'inbox, collegare, riassumere |
