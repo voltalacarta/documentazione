@@ -15,15 +15,15 @@ Scrivere, collegare e ritrovare note nel repository `second-brain`, dal browser 
 
 ## Nel browser (Foam)
 
-1. Apri il repository `second-brain` in **Codespaces** (consigliato) o con **github.dev** (tasto `.`). Vedi [Lavorare online](lavorare-online.md).
+1. Apri il repository `second-brain` in **Codespaces** (consigliato: si apre da sola la nota `inizia-qui.md`) o con **github.dev** (tasto `.`). Vedi [Lavorare online](lavorare-online.md).
 2. Accetta le estensioni consigliate (Foam).
 3. Usa la palette dei comandi (`Ctrl+Shift+P`, su Mac `Cmd+Shift+P`):
 
    | Comando | Effetto |
    | --- | --- |
-   | `Foam: Open Daily Note` | Apre o crea la nota di oggi in `01-giornaliere/` |
+   | `Foam: Open Today's Note` | Apre o crea la nota di oggi in `01-giornaliere/` (scrivi `today`) |
    | `Foam: Create New Note From Template` | Nuova nota da un modello (nota o progetto) |
-   | `Foam: Show Graph` | Grafo dei collegamenti |
+   | `Foam: Show Graph` | Grafo dei collegamenti (scrivi `graph`) |
 
 4. Scrivi `[[` per collegare un'altra nota: Foam suggerisce i nomi.
 5. Il pannello **Connections** nella barra laterale mostra i backlink.
