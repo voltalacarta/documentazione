@@ -18,10 +18,11 @@ Qui finisce **tutto ciò che viene sancito**. Una decisione = un file numerato.
 | [0002](0002-github-come-base-di-lavoro.md) | GitHub come base unica di lavoro | accettato | 2026-10-15 |
 | [0003](0003-ambiente-di-sviluppo-solo-cloud.md) | Ambiente di sviluppo solo cloud con GitHub Codespaces | accettato | 2026-10-15 |
 | [0004](0004-second-brain-markdown-su-github.md) | Second brain in Markdown su GitHub | accettato | 2026-10-15 |
+| [0005](0005-strumenti-online-gratuiti.md) | Strumenti online gratuiti per editor e second brain | accettato | 2026-10-15 |
 
 ## Come si registra una decisione
 
-1. Copia [`_modelli/decisione.md`](../_modelli/decisione.md) in questa cartella con il numero successivo: `0005-titolo-breve.md`.
+1. Copia [`_modelli/decisione.md`](../_modelli/decisione.md) in questa cartella con il numero successivo: `0006-titolo-breve.md`.
 2. Compila contesto, decisione, alternative e conseguenze.
 3. Stato iniziale `proposto`; diventa `accettato` quando è approvata.
 4. Aggiungi la riga nella tabella qui sopra.

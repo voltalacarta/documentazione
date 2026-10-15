@@ -15,6 +15,7 @@ Termini in ordine alfabetico. Aggiungine di nuovi quando compaiono nella documen
 | **ADR** | *Architecture Decision Record*: scheda breve che registra una decisione, il contesto e le conseguenze. Qui le chiamiamo semplicemente "decisioni". |
 | **Backlink** | Collegamento inverso: da una nota si vede quali altre note la citano. |
 | **Branch** | Linea di lavoro parallela in Git; si unisce a `main` con una pull request. |
+| **Cloud Shell** | Terminale ed editor gratuiti di Google nel browser, con 5 GB persistenti. Riserva di Codespaces. |
 | **Codespaces** | Servizio di GitHub che fornisce un ambiente di sviluppo completo (VS Code) su una macchina cloud, usabile dal browser. |
 | **Commit** | Salvataggio registrato di un insieme di modifiche, con autore, data e messaggio. |
 | **Dev container** | File di configurazione (`.devcontainer/devcontainer.json`) che descrive l'ambiente di un Codespace in modo riproducibile. |

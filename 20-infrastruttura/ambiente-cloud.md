@@ -1,69 +1,75 @@
 ---
 titolo: Ambiente di sviluppo cloud
-stato: bozza
+stato: attivo
 creato: 2026-10-15
 aggiornato: 2026-10-15
-tag: [infrastruttura, codespaces, cloud]
-collegati: [0003]
+tag: [infrastruttura, codespaces, cloud-shell, cloud]
+collegati: [0003, 0005]
 ---
 
 # Ambiente di sviluppo cloud
 
-Decisione di riferimento: [0003 · Ambiente di sviluppo solo cloud](../10-decisioni/0003-ambiente-di-sviluppo-solo-cloud.md).
+Decisioni di riferimento: [0003 · Sviluppo solo cloud](../10-decisioni/0003-ambiente-di-sviluppo-solo-cloud.md) e [0005 · Strumenti online gratuiti](../10-decisioni/0005-strumenti-online-gratuiti.md).
 
-> **Stato:** bozza. L'ambiente è deciso ma non ancora configurato. Questo documento verrà completato durante la messa in opera.
+## Principio
+
+**I dati vivono solo su GitHub.** Ogni editor è sostituibile. A fine sessione: commit e push.
 
 ## Componenti
 
-| Componente | A cosa serve | Come si apre |
-| --- | --- | --- |
-| **GitHub Codespaces** | Sviluppo completo: editor, terminale, debugger, estensioni | Repository → *Code* → *Codespaces* → *Create* |
-| **github.dev** | Modifiche veloci, senza terminale, gratuito | Tasto `.` su un repository |
-| **Claude** | Compiti delegati portati avanti nel cloud fino alla PR | claude.ai |
-| **GitHub Actions** | Test e rilascio automatici | File in `.github/workflows/` |
+| Componente | A cosa serve | Terminale | Come si apre |
+| --- | --- | --- | --- |
+| **GitHub Codespaces** | Lavoro completo: editor, terminale, estensioni | ✅ | Repository → *Code* → *Codespaces* → *Create codespace on main* |
+| **github.dev** | Modifiche veloci | ❌ | Tasto `.` su un repository |
+| **Google Cloud Shell** | Riserva gratuita con terminale | ✅ | [shell.cloud.google.com](https://shell.cloud.google.com) |
+| **Claude** | Compiti delegati, fino a commit o PR | — | claude.ai |
+| **GitHub Actions** | Controlli automatici | — | File in `.github/workflows/` |
+
+Procedura d'uso: [Lavorare online](../40-procedure/lavorare-online.md).
 
 ## Dev container
 
-Ogni repository di codice contiene `.devcontainer/devcontainer.json`, che descrive linguaggi, strumenti ed estensioni. Così l'ambiente è uguale ogni volta.
+Ogni repository ha `.devcontainer/devcontainer.json`, che descrive l'ambiente di Codespaces: immagine, strumenti, estensioni. Così ogni Codespace nasce identico.
 
-Esempio di base (da adattare allo stack, ancora da definire):
+| Repository | Ambiente |
+| --- | --- |
+| `documentazione` | Node 20 + markdownlint |
+| `second-brain` | Ubuntu base + Foam |
 
-```json
-{
-  "name": "progetto",
-  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
-  "features": {
-    "ghcr.io/devcontainers/features/node:1": {},
-    "ghcr.io/devcontainers/features/python:1": {}
-  },
-  "customizations": {
-    "vscode": {
-      "extensions": ["editorconfig.editorconfig", "davidanson.vscode-markdownlint"]
-    }
-  }
-}
-```
+I repository di codice avranno il loro quando sarà definito lo stack.
 
 ## Dotfiles
 
-Un repository `dotfiles` con alias, configurazione del terminale e di Git. Si attiva da **GitHub → Settings → Codespaces → Dotfiles**, e viene applicato automaticamente a ogni nuovo Codespace.
+Un repository `dotfiles` (alias, terminale, Git) applicato automaticamente a ogni Codespace. Si attiva da **GitHub → Settings → Codespaces → Dotfiles**. Da creare.
 
 ## Controllo dei costi
 
-Le impostazioni si trovano in **GitHub → Settings → Codespaces** e **Settings → Billing**.
+### Limiti gratuiti (verificati il 2026-10-15)
 
-| Impostazione | Valore consigliato | Perché |
+| Servizio | Quota gratuita |
+| --- | --- |
+| Codespaces (piano Free) | 120 ore di calcolo e 15 GB-mese al mese. Le macchine più grandi consumano in proporzione ai core: su 2 core ≈ 60 ore reali |
+| Codespaces (piano Pro) | 180 ore di calcolo e 20 GB-mese al mese |
+| Cloud Shell | 50 ore a settimana, 5 GB in `$HOME`, sessioni fino a 12 ore |
+
+### Impostazioni consigliate
+
+In **GitHub → Settings → Codespaces** e **Settings → Billing**:
+
+| Impostazione | Valore | Perché |
 | --- | --- | --- |
-| Limite di spesa Codespaces | **0 €** | Finita la quota gratuita si ferma, senza addebiti |
+| Metodo di pagamento | **nessuno** | Finita la quota l'uso si blocca, senza addebiti |
 | Timeout di inattività | **30 minuti** | Non consuma ore quando non si usa |
-| Conservazione Codespace inattivi | **pochi giorni** (es. 7) | Libera spazio di archiviazione |
-| Tipo di macchina | 2 core | Sufficiente per la maggior parte del lavoro |
+| Conservazione Codespace inattivi | **7 giorni** | Libera spazio di archiviazione |
+| Tipo di macchina | **2 core** | Il minimo, consuma meno quota |
 
-La quota gratuita per gli account personali è indicata da GitHub nella pagina di billing; i valori possono cambiare, quindi vanno verificati lì.
+### Attenzione
+
+- Un Codespace cancellato perde le modifiche non inviate con push.
+- Cloud Shell cancella `$HOME` dopo 120 giorni senza accessi (con avviso via email).
 
 ## Da completare
 
-- [ ] Definire lo stack (linguaggi e strumenti) dei progetti di codice
-- [ ] Creare il repository `dotfiles`
 - [ ] Applicare le impostazioni di costo
-- [ ] Scrivere la procedura "Aprire e usare un Codespace" in `40-procedure/`
+- [ ] Creare il repository `dotfiles`
+- [ ] Definire lo stack dei progetti di codice

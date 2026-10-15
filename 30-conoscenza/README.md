@@ -12,6 +12,6 @@ Come si raccolgono, organizzano e ritrovano note e appunti.
 
 | Documento | Contenuto | Stato |
 | --- | --- | --- |
-| [Second brain](second-brain.md) | Struttura, strumenti e uso del second brain | bozza |
+| [Second brain](second-brain.md) | Struttura, strumenti e regole del second brain | attivo |
 
 > Questa sezione descrive il **metodo**. Le note vere e proprie vivono nel repository privato `second-brain`, non qui.

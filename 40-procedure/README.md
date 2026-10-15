@@ -13,9 +13,10 @@ Istruzioni passo-passo per le attività ricorrenti. Ogni procedura parte dal [mo
 | Procedura | Scopo | Stato |
 | --- | --- | --- |
 | [Aggiornare la documentazione](aggiornare-la-documentazione.md) | Aggiungere o modificare un documento in questo repository | attivo |
+| [Lavorare online](lavorare-online.md) | Usare github.dev, Codespaces e Cloud Shell | attivo |
+| [Usare il second brain](usare-il-second-brain.md) | Foam nel browser, Obsidian sul telefono, routine | attivo |
 
 ## Da scrivere
 
-- Aprire e usare un Codespace
 - Creare un nuovo repository di progetto
 - Eseguire e verificare il backup
