@@ -1,0 +1,13 @@
+{
+  "name": "documentazione",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "davidanson.vscode-markdownlint",
+        "editorconfig.editorconfig",
+        "yzhang.markdown-all-in-one"
+      ]
+    }
+  }
+}
