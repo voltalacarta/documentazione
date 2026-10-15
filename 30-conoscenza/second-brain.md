@@ -11,7 +11,7 @@ collegati: [0004, 0005]
 
 Decisioni di riferimento: [0004 · Second brain su GitHub](../10-decisioni/0004-second-brain-markdown-su-github.md) e [0005 · Strumenti online gratuiti](../10-decisioni/0005-strumenti-online-gratuiti.md).
 
-Repository: `voltalacarta/second-brain` (**privato**). Uso quotidiano: [Usare il second brain](../40-procedure/usare-il-second-brain.md).
+Repository: [`voltalacarta/second-brain`](https://github.com/voltalacarta/second-brain) (**privato**). Uso quotidiano: [Usare il second brain](../40-procedure/usare-il-second-brain.md).
 
 ## Differenza con questo repository
 
@@ -19,7 +19,7 @@ Repository: `voltalacarta/second-brain` (**privato**). Uso quotidiano: [Usare il
 | --- | --- | --- |
 | Contenuto | Ciò che è **deciso e ufficiale** | Appunti, idee, letture, bozze |
 | Tono | Formale, stabile | Libero, in evoluzione |
-| Visibilità | da definire | **privato** |
+| Visibilità | pubblico (da valutare) | **privato** |
 
 Quando un'idea del second brain diventa una scelta, si scrive una decisione qui.
 
@@ -71,6 +71,6 @@ Da valutare e, se adottate, registrare come decisione:
 
 ## Da completare
 
-- [ ] Creare il repository privato `second-brain` su GitHub e caricare la struttura
+- [x] Creare il repository privato `second-brain` su GitHub e caricare la struttura (2026-10-15)
 - [ ] Configurare Obsidian mobile con il plugin Git (facoltativo)
 - [ ] Decidere le automazioni

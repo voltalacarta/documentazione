@@ -19,8 +19,8 @@ Decisione di riferimento: [0002 · GitHub come base unica di lavoro](../10-decis
 
 | Repository | Scopo | Visibilità | Stato |
 | --- | --- | --- | --- |
-| [`documentazione`](https://github.com/voltalacarta/documentazione) | Documentazione generale e decisioni | da verificare | attivo |
-| `second-brain` | Note personali (vedi [0004](../10-decisioni/0004-second-brain-markdown-su-github.md)) | **privato** | struttura pronta, repository da creare |
+| [`documentazione`](https://github.com/voltalacarta/documentazione) | Documentazione generale e decisioni | **pubblico** (da valutare) | attivo |
+| [`second-brain`](https://github.com/voltalacarta/second-brain) | Note personali (vedi [0004](../10-decisioni/0004-second-brain-markdown-su-github.md)) | **privato** | attivo |
 | `dotfiles` | Configurazioni personali per Codespaces | pubblico o privato | da creare |
 
 Aggiorna questa tabella ogni volta che si crea, rinomina o archivia un repository.

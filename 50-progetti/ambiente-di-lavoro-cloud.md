@@ -25,7 +25,8 @@ Un ambiente di lavoro "chiavi in mano" interamente nel cloud: documentazione, sv
 | 2 | Creare la struttura del repository `documentazione` | ✅ fatto |
 | 3 | Scegliere gli strumenti online gratuiti (decisione 0005) | ✅ fatto |
 | 4 | Preparare struttura, modelli e configurazione Foam/Obsidian del second brain | ✅ fatto |
-| 5 | Creare su GitHub il repository privato `second-brain` (utente) e caricare la struttura (Claude) | ⏳ da fare |
+| 5 | Creare su GitHub il repository privato `second-brain` e caricare la struttura | ✅ fatto |
+| 5b | Decidere la visibilità di `documentazione` (oggi pubblico) | ⏳ da fare |
 | 6 | Proteggere l'account GitHub (2FA/passkey) | ⏳ da fare |
 | 7 | Applicare le impostazioni di costo di Codespaces | ⏳ da fare |
 | 8 | Creare il repository `dotfiles` | ⏳ da fare |
