@@ -1,0 +1,54 @@
+name: Revisioni sicurezza web
+
+# Una volta al mese controlla le date "prossima_revisione" della sezione
+# 25-sicurezza-web. Se ci sono file scaduti o in scadenza entro 30 giorni,
+# apre (o aggiorna) una issue con l'elenco.
+
+on:
+  schedule:
+    - cron: "17 6 1 * *"   # il primo di ogni mese, 06:17 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  revisioni:
+    name: Controllo delle scadenze
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Report delle revisioni
+        id: report
+        run: |
+          set +e
+          python3 25-sicurezza-web/14-automazione/scripts/kb-revisioni.py \
+            --radice 25-sicurezza-web --giorni 30 --markdown > report.md
+          set -e
+          if grep -q -- "- \[ \]" report.md || grep -q -- "- \`" report.md; then
+            echo "da_rivedere=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "da_rivedere=false" >> "$GITHUB_OUTPUT"
+          fi
+          cat report.md
+
+      - name: Apri o aggiorna la issue
+        if: steps.report.outputs.da_rivedere == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TITOLO: "Revisioni in scadenza: sicurezza web"
+        run: |
+          gh label create sicurezza-web --color B60205 \
+            --description "Sezione 25-sicurezza-web" --force
+          numero=$(gh issue list --state open --label sicurezza-web \
+            --search "in:title \"$TITOLO\"" --json number --jq '.[0].number')
+          if [ -n "$numero" ]; then
+            gh issue edit "$numero" --body-file report.md
+            gh issue comment "$numero" --body "Report aggiornato il $(date -u +%F)."
+          else
+            gh issue create --title "$TITOLO" --label sicurezza-web --body-file report.md
+          fi

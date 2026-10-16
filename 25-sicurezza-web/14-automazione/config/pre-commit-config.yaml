@@ -1,0 +1,20 @@
+# pre-commit — rinominare in .pre-commit-config.yaml nella root (rev. 2026-10-15)
+# Installazione:  pipx install pre-commit && pre-commit install
+# Aggiorna le versioni dei hook:  pre-commit autoupdate
+repos:
+  # Blocca i commit che contengono segreti
+  - repo: https://github.com/gitleaks/gitleaks
+    rev: v8.21.2
+    hooks:
+      - id: gitleaks
+
+  # Controlli generici
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: detect-private-key
+      - id: check-added-large-files
+        args: ["--maxkb=1024"]
+      - id: check-merge-conflict
+      - id: check-yaml
+      - id: check-json

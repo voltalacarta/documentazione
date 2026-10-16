@@ -1,0 +1,32 @@
+# Righe da aggiungere al .gitignore di ogni progetto — rev. 2026-10-15
+
+# Segreti e configurazioni locali
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
+credentials.json
+service-account*.json
+secrets.*
+.npmrc.local
+
+# Dump e backup
+*.sql
+*.sqlite
+*.dump
+*.bak
+*.old
+backup*/
+
+# Log
+*.log
+logs/
+
+# Sistema
+.DS_Store
+Thumbs.db

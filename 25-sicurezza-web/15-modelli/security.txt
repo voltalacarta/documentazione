@@ -1,0 +1,11 @@
+# Pubblicare in https://[DOMINIO]/.well-known/security.txt
+# Formato: RFC 9116. Campi obbligatori: Contact, Expires.
+# Aggiornare "Expires" almeno una volta all'anno (max 1 anno consigliato).
+
+Contact: mailto:[EMAIL SICUREZZA]
+Expires: 2027-10-15T00:00:00.000Z
+Preferred-Languages: it, en
+Canonical: https://[DOMINIO]/.well-known/security.txt
+Policy: https://[DOMINIO]/sicurezza/segnalazioni
+# Acknowledgments: https://[DOMINIO]/sicurezza/ringraziamenti
+# Encryption: https://[DOMINIO]/.well-known/pgp-key.txt

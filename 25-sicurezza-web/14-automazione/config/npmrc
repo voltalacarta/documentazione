@@ -1,0 +1,21 @@
+# .npmrc di progetto (rinominare in .npmrc nella root) — rev. 2026-10-15
+# Vedi 06-supply-chain/npm-dopo-shai-hulud.md
+
+# Nessuno script di lifecycle (postinstall ecc.) eseguito in automatico.
+# Se un pacchetto ne ha davvero bisogno (es. esbuild, sharp), eseguilo
+# esplicitamente con: npm rebuild <pacchetto>
+# Nota: "npm run <script>", "npm test", "npm start" continuano a funzionare,
+# ma NON eseguono più gli hook "pre<script>" e "post<script>".
+ignore-scripts=true
+
+# Versioni esatte nel package.json, niente ^ o ~
+save-exact=true
+
+# Il lockfile è obbligatorio e va versionato
+package-lock=true
+
+# Fallisce se le versioni dei motori non corrispondono
+engine-strict=true
+
+# Report di audit solo per gravità rilevanti
+audit-level=high

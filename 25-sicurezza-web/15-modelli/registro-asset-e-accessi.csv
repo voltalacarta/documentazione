@@ -1,0 +1,2 @@
+asset;tipo(dominio/hosting/cms/repository/servizio-saas/account-social/altro);fornitore;url_pannello;titolare_contrattuale;persone_con_accesso;ruolo_accesso;mfa_attiva(si/no);metodo_mfa;email_di_recupero;scadenza_rinnovo;dati_personali_trattati(si/no);dpa_firmato(si/no);ultima_revisione_accessi;note
+example.it;dominio;[registrar];;[organizzazione];[nomi];proprietario;;;;;no;n.a.;;Blocco trasferimento attivo?

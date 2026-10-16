@@ -2,7 +2,7 @@
 titolo: Struttura del repository
 stato: attivo
 creato: 2026-10-15
-aggiornato: 2026-10-15
+aggiornato: 2026-10-16
 tag: [meta, struttura]
 ---
 
@@ -24,6 +24,7 @@ documentazione/
 ├── 00-meta/               ← regole del repository
 ├── 10-decisioni/          ← registro decisioni (ADR)
 ├── 20-infrastruttura/     ← ambiente di lavoro e strumenti
+├── 25-sicurezza-web/      ← sicurezza di siti e progetti digitali
 ├── 30-conoscenza/         ← second brain e gestione note
 ├── 40-procedure/          ← procedure operative
 ├── 50-progetti/           ← schede progetto
@@ -43,6 +44,8 @@ A ogni push e pull request, GitHub Actions ([`controlli.yml`](../.github/workflo
 - **formato Markdown** con markdownlint;
 - **link interni** con lychee: segnala file o titoli inesistenti.
 
+Una volta al mese [`revisioni-sicurezza-web.yml`](../.github/workflows/revisioni-sicurezza-web.yml) controlla le date di revisione della sezione [Sicurezza web](../25-sicurezza-web/README.md) e apre una issue se qualcosa è scaduto.
+
 ## Numerazione a decine
 
 I prefissi vanno di 10 in 10 per lasciare spazio a sezioni future senza rinumerare:
@@ -51,7 +54,7 @@ I prefissi vanno di 10 in 10 per lasciare spazio a sezioni future senza rinumera
 | --- | --- | --- |
 | `00–09` | Meta | — |
 | `10–19` | Decisioni e governance | `15-politiche/` |
-| `20–29` | Infrastruttura e strumenti | `25-servizi-esterni/` |
+| `20–29` | Infrastruttura e strumenti | `25-sicurezza-web/` (in uso), `26-servizi-esterni/` |
 | `30–39` | Conoscenza | — |
 | `40–49` | Operatività | `45-checklist/` |
 | `50–59` | Progetti | `55-clienti/` |

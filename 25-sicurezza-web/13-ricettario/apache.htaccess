@@ -1,0 +1,56 @@
+# =====================================================================
+# Apache / hosting condiviso — .htaccess di sicurezza (rev. 2026-10-15)
+# Richiede mod_headers e mod_rewrite (presenti su quasi tutti gli hosting).
+# Inserire in testa al .htaccess della root del sito.
+# Per WordPress: lasciare intatto il blocco "# BEGIN WordPress ... # END".
+# =====================================================================
+
+# --- Forza HTTPS ---
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTPS} !=on
+  RewriteCond %{HTTP:X-Forwarded-Proto} !https
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>
+
+# --- Header di sicurezza ---
+<IfModule mod_headers.c>
+  Header always set Strict-Transport-Security "max-age=63072000; includeSubDomains" "expr=%{HTTPS} == 'on'"
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Cross-Origin-Opener-Policy "same-origin"
+  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=(), usb=()"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Content-Security-Policy "frame-ancestors 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests"
+
+  # Rimuove informazioni sulla tecnologia
+  Header always unset X-Powered-By
+  Header unset X-Powered-By
+</IfModule>
+
+# --- Nessun elenco delle cartelle ---
+Options -Indexes
+
+# --- Blocca file nascosti (tranne .well-known) ---
+<IfModule mod_rewrite.c>
+  RewriteRule "(^|/)\.(?!well-known/)" - [F,L]
+</IfModule>
+
+# --- Blocca backup, dump e configurazioni ---
+<FilesMatch "\.(bak|old|orig|save|swp|sql|sqlite|log|env|ini|conf|dist|zip|tar|gz|7z)$">
+  Require all denied
+</FilesMatch>
+<FilesMatch "^(composer\.(json|lock)|package(-lock)?\.json|wp-config\.php|readme\.html|license\.txt|\.htaccess)$">
+  Require all denied
+</FilesMatch>
+
+# --- Impedisce l'esecuzione di PHP nella cartella degli upload ---
+# Da mettere in un .htaccess separato DENTRO la cartella di upload
+# (es. wp-content/uploads/.htaccess):
+#
+#   <FilesMatch "\.(php|phtml|php[0-9]|phar)$">
+#     Require all denied
+#   </FilesMatch>
+
+# Nota: "ServerTokens Prod" e "ServerSignature Off" vanno nella
+# configurazione principale di Apache, non nel .htaccess. Chiedili all'hosting.

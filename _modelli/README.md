@@ -8,4 +8,5 @@ Modelli da copiare per creare un nuovo documento. Copia il file, rinominalo seco
 | [documento.md](documento.md) | Un documento descrittivo generico | `20-`, `30-` o nuove sezioni |
 | [procedura.md](procedura.md) | Una procedura passo-passo | `40-procedure/` |
 | [progetto.md](progetto.md) | Una scheda progetto | `50-progetti/` |
+| [scheda-sicurezza-web.md](scheda-sicurezza-web.md) | Una scheda della knowledge base di sicurezza web | `25-sicurezza-web/` |
 | [indice-sezione.md](indice-sezione.md) | Il `README.md` di una nuova cartella | Ogni nuova cartella |

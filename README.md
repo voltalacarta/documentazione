@@ -12,6 +12,7 @@ Tutto ciò che viene deciso, stabilito o standardizzato finisce qui, come file M
 | [`00-meta/`](00-meta/README.md) | Regole di questo repository: convenzioni, struttura, glossario | Prima di scrivere qualcosa di nuovo |
 | [`10-decisioni/`](10-decisioni/README.md) | Registro delle decisioni (una decisione = un file) | Quando si "sancisce" qualcosa |
 | [`20-infrastruttura/`](20-infrastruttura/README.md) | Ambiente di lavoro: GitHub, ambiente cloud, sicurezza | Per sapere *com'è fatto* il sistema |
+| [`25-sicurezza-web/`](25-sicurezza-web/README.md) | Sicurezza di siti e progetti digitali: best practice, configurazioni, modelli, normativa | Per progettare, commissionare o verificare un sito |
 | [`30-conoscenza/`](30-conoscenza/README.md) | Second brain e gestione della conoscenza | Per sapere *come si organizzano* note e appunti |
 | [`40-procedure/`](40-procedure/README.md) | Procedure operative passo-passo | Per sapere *come si fa* una cosa |
 | [`50-progetti/`](50-progetti/README.md) | Schede dei progetti | Per lo stato di un'iniziativa |

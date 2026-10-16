@@ -1,0 +1,39 @@
+# Dependabot — copiare in .github/dependabot.yml (rev. 2026-10-15)
+# Tieni solo gli ecosistemi che usi davvero.
+version: 2
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    groups:
+      actions:
+        patterns: ["*"]
+
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    # Attende qualche giorno prima di proporre nuove versioni:
+    # molti pacchetti compromessi vengono rimossi entro poche ore/giorni.
+    # Il cooldown vale solo per gli aggiornamenti di versione: quelli di
+    # sicurezza arrivano subito (verificato sulla documentazione GitHub).
+    cooldown:
+      default-days: 3
+      semver-major-days: 14
+    open-pull-requests-limit: 10
+
+  - package-ecosystem: "composer"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+
+  - package-ecosystem: "docker"
+    directory: "/"
+    schedule:
+      interval: "weekly"

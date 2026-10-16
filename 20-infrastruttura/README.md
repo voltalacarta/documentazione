@@ -2,7 +2,7 @@
 titolo: Infrastruttura
 stato: attivo
 creato: 2026-10-15
-aggiornato: 2026-10-15
+aggiornato: 2026-10-16
 tag: [infrastruttura, indice]
 ---
 
@@ -15,3 +15,5 @@ Com'è fatto l'ambiente di lavoro: piattaforme, strumenti, configurazioni.
 | [GitHub](github.md) | Account, repository, convenzioni | attivo |
 | [Ambiente cloud](ambiente-cloud.md) | Codespaces, github.dev, Cloud Shell, costi | attivo |
 | [Sicurezza](sicurezza.md) | Accessi, segreti, backup | attivo |
+
+> Sicurezza di siti e applicazioni: sezione [25 · Sicurezza web](../25-sicurezza-web/README.md).

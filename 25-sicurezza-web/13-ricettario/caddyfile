@@ -1,0 +1,42 @@
+# =====================================================================
+# Caddy — configurazione di sicurezza (rev. 2026-10-15)
+# Copiare come "Caddyfile" (con la C maiuscola) nella cartella di Caddy.
+# Caddy gestisce da solo HTTPS, certificati ACME, redirect e TLS moderno.
+# Le versioni recenti di Caddy (basate su Go 1.24+) offrono anche il
+# key exchange post-quantum di default: verifica con il tuo binario.
+# =====================================================================
+
+(security) {
+	header {
+		Strict-Transport-Security "max-age=63072000; includeSubDomains"
+		X-Content-Type-Options "nosniff"
+		Referrer-Policy "strict-origin-when-cross-origin"
+		Cross-Origin-Opener-Policy "same-origin"
+		Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=(), usb=()"
+		X-Frame-Options "SAMEORIGIN"
+		Content-Security-Policy "frame-ancestors 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests"
+		-Server
+		-X-Powered-By
+	}
+
+	# RE2 (Go) non supporta il lookahead: si esclude .well-known con "not"
+	@hidden {
+		path_regexp hidden /\.
+		not path /.well-known/*
+	}
+	respond @hidden 404
+
+	@backup path_regexp backup \.(bak|old|orig|swp|sql|sqlite|log|env|ini|zip|tar|gz)$
+	respond @backup 404
+
+	request_body {
+		max_size 10MB
+	}
+}
+
+example.it, www.example.it {
+	import security
+	root * /var/www/example
+	file_server
+	# reverse_proxy localhost:3000
+}

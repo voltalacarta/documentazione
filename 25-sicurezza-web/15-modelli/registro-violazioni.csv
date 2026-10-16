@@ -1,0 +1,2 @@
+id;data_scoperta;ora_scoperta;data_inizio_presunta;descrizione;sistemi_coinvolti;categorie_dati;categorie_interessati;numero_interessati_stimato;conseguenze_probabili;rischio(basso/medio/elevato);misure_adottate;notificata_garante(si/no);data_notifica_garante;motivazione_se_non_notificata;comunicata_interessati(si/no);data_comunicazione;notifiche_altre(CSIRT/ENISA/assicurazione);responsabile;stato(aperta/chiusa);note
+2026-001;;;;;;;;;;;;;;;;;;;aperta;Esempio di riga da sostituire

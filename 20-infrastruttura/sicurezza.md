@@ -2,12 +2,14 @@
 titolo: Sicurezza
 stato: attivo
 creato: 2026-10-15
-aggiornato: 2026-10-15
+aggiornato: 2026-10-16
 tag: [infrastruttura, sicurezza, backup]
 collegati: [0002, 0003, 0004]
 ---
 
 # Sicurezza
+
+Questo documento riguarda l'**ambiente di lavoro** (account, segreti, backup). Per la sicurezza dei **siti e progetti digitali** vedi la sezione [Sicurezza web](../25-sicurezza-web/README.md).
 
 ## Accesso a GitHub
 
