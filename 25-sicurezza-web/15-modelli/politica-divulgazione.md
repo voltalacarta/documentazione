@@ -46,4 +46,4 @@ Scrivi a **[EMAIL SICUREZZA]** indicando:
 Al momento non offriamo ricompense economiche. [oppure: link al programma di bug bounty]
 
 ---
-*Contatto tecnico pubblicato anche in [/.well-known/security.txt](https://[DOMINIO]/.well-known/security.txt).*
+*Contatto tecnico pubblicato anche in `https://[DOMINIO]/.well-known/security.txt`.*

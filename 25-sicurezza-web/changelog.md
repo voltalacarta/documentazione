@@ -31,6 +31,7 @@ Formato ispirato a [Keep a Changelog](https://keepachangelog.com/it/). Versionam
 - Questionario fornitori: domande con codici univoci per sezione (A1, B2…).
 - `kb-revisioni.py`: si esegue dalla radice del repository con `--radice 25-sicurezza-web` e ignora gli indici delle cartelle.
 - Formato Markdown corretto secondo `markdownlint` (righe vuote intorno a titoli, elenchi e blocchi).
+- Politica di divulgazione: il segnaposto `https://[DOMINIO]/…` non è più un link (lychee lo segnalava come URL non valido).
 
 ## [1.2.0] — 2026-10-15
 
