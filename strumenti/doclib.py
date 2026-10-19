@@ -113,8 +113,10 @@ def sintesi(meta: dict[str, Any], corpo: str, massimo: int = 180) -> str:
             if not righe:
                 continue
         prima = righe[0]
-        if prima.startswith(("#", "|", "---", "<", "![", "- [", "* [")) or re.match(r"^[-*+]\s|^\d+\.\s", prima):
+        if prima.startswith(("#", "|", "---", "<", "![", "- [", "* [", "←", "[←")) or re.match(r"^[-*+]\s|^\d+\.\s", prima):
             continue
+        if len(righe) == 1 and re.fullmatch(r"(\*|_)(?!\1).+(\*|_)", prima):
+            continue  # riga tutta in corsivo: versione, data, nota di servizio
         testo = piano(" ".join(r.lstrip("> ").strip() for r in righe))
         testo = re.sub(r"^(in sintesi|in breve|sintesi|tl;?dr|riassunto)\s*[.:—-]\s*", "", testo, flags=re.I)
         if len(testo) < 12 or testo.endswith(":") or RE_SERVIZIO.match(testo):

@@ -93,16 +93,16 @@ Per cercare: `grep -i "parola" INDICE.md`, poi apri solo i file trovati.
 - 25-sicurezza-web/14-automazione/github/workflows/README.md · Workflow GitHub Actions · attivo · Workflow GitHub Actions
 - 25-sicurezza-web/14-automazione/scripts/README.md · Script · attivo · -
 - 25-sicurezza-web/15-modelli/README.md · Modelli di documenti · attivo · Documenti pronti da compilare, validi per qualunque progetto digitale.
-- 25-sicurezza-web/15-modelli/piano-risposta-incidenti.md · Piano di risposta agli incidenti di sicurezza · attivo · [NOME ORGANIZZAZIONE] — versione [1.0] — approvato da [CHI] il [DATA] — prossima revisione [DATA + 12 mesi]
-- 25-sicurezza-web/15-modelli/politica-divulgazione.md · Segnalazione responsabile delle vulnerabilità · attivo · [NOME ORGANIZZAZIONE] — versione [1.0] del [DATA]
-- 25-sicurezza-web/15-modelli/procedura-accessi.md · Procedura di gestione degli accessi · attivo · [NOME ORGANIZZAZIONE] — versione [1.0] — [DATA]
-- 25-sicurezza-web/15-modelli/questionario-fornitori.md · Questionario di sicurezza per fornitori · attivo · Da inviare ad agenzie web, sviluppatori, hosting, piattaforme SaaS e fornitori di servizi AI prima della scelta o del rinnovo.
+- 25-sicurezza-web/15-modelli/piano-risposta-incidenti.md · Piano di risposta agli incidenti di sicurezza · attivo · Riferimenti: incident-response, gdpr, nis2-italia, cyber-resilience-act.
+- 25-sicurezza-web/15-modelli/politica-divulgazione.md · Segnalazione responsabile delle vulnerabilità · attivo · Teniamo alla sicurezza dei nostri siti e servizi e a quella delle persone che li usano.
+- 25-sicurezza-web/15-modelli/procedura-accessi.md · Procedura di gestione degli accessi · attivo · Si applica a dipendenti, collaboratori, agenzie e fornitori che accedono a domini, hosting, CMS, repository, caselle email, social e strumenti SaaS.
+- 25-sicurezza-web/15-modelli/questionario-fornitori.md · Questionario di sicurezza per fornitori · attivo · Le domande hanno un codice (A1, B2…) da citare nelle risposte.
 - 25-sicurezza-web/16-progetti/README.md · Progetti · attivo · -
 - 25-sicurezza-web/16-progetti/profili-di-progetto.md · Profili di progetto — requisiti in base al tipo · attivo · Quando nasce un nuovo progetto digitale, rispondi alle domande di classificazione: il profilo che ne esce dice quale livello ASVS adottare, quali cont
 - 25-sicurezza-web/16-progetti/requisiti-capitolato.md · Requisiti di sicurezza per capitolati e contratti · attivo · ⚠️ Testo tecnico di partenza: le clausole contrattuali (responsabilità, penali, garanzie) vanno validate da un legale.
 - 25-sicurezza-web/17-formazione/README.md · Formazione · attivo · -
 - 25-sicurezza-web/17-formazione/quiz.md · Quiz di verifica · attivo · Due set: base per tutti, tecnico per chi sviluppa o gestisce i siti.
-- 25-sicurezza-web/17-formazione/regole-per-redattori.md · Dieci regole per chi lavora sul sito · attivo · Per redattori, collaboratori e chiunque abbia un accesso al pannello, ai social o alla posta dell'organizzazione.
+- 25-sicurezza-web/17-formazione/regole-per-redattori.md · Dieci regole per chi lavora sul sito · attivo · -
 - 25-sicurezza-web/README.md · Sicurezza web · attivo · Knowledge base di best practice (aggiornata al 2026) per progettare, sviluppare e gestire siti e applicazioni web sicuri.
 - 25-sicurezza-web/changelog.md · Changelog · attivo · Formato ispirato a Keep a Changelog. Versionamento: MAJOR.MINOR.PATCH
 - 25-sicurezza-web/checklist/README.md · Checklist · attivo · -

@@ -16,6 +16,6 @@ Indice della cartella. Torna alla [sezione Sicurezza web](../README.md).
 | Documento | Sintesi | Stato |
 | --- | --- | --- |
 | [Quiz di verifica](quiz.md) | Due set: base per tutti, tecnico per chi sviluppa o gestisce i siti. | attivo |
-| [Dieci regole per chi lavora sul sito](regole-per-redattori.md) | Per redattori, collaboratori e chiunque abbia un accesso al pannello, ai social o alla posta dell'organizzazione. | attivo |
+| [Dieci regole per chi lavora sul sito](regole-per-redattori.md) |  | attivo |
 
 <!-- indice:fine -->
