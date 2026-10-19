@@ -22,10 +22,11 @@ Tutto ciò che viene deciso, stabilito o standardizzato finisce qui, come file M
 ## Come contribuire in 30 secondi
 
 1. Scegli la sezione giusta (vedi tabella sopra).
-2. Copia il modello adatto da [`_modelli/`](_modelli/README.md).
-3. Compila l'intestazione (frontmatter) e scrivi il contenuto.
-4. Aggiungi il link al nuovo file nel `README.md` della sezione.
-5. Fai commit con un messaggio chiaro (vedi [convenzioni](00-meta/convenzioni.md#messaggi-di-commit)).
+2. Copia il modello adatto da [`_modelli/`](_modelli/README.md). Per una decisione: `python3 strumenti/nuova-decisione.py "Titolo"`.
+3. Compila l'intestazione (frontmatter, con una `sintesi` di una riga) e scrivi il contenuto.
+4. Fai commit con un messaggio chiaro (vedi [convenzioni](00-meta/convenzioni.md#messaggi-di-commit)) e push.
+
+**Indici, registro delle decisioni e [`INDICE.md`](INDICE.md) si aggiornano da soli**, e il documento compare nel grafo del second brain. Ogni progetto nuovo ha una repo propria: vedi [nuovo progetto](40-procedure/nuovo-progetto.md).
 
 Le regole complete sono in [`00-meta/convenzioni.md`](00-meta/convenzioni.md).
 

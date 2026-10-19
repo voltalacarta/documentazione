@@ -10,6 +10,7 @@ tag: [<sezione>, indice]
 
 <Una frase: cosa contiene questa sezione e cosa non contiene.>
 
-| Documento | Contenuto | Stato |
-| --- | --- | --- |
-| [<titolo>](<file>.md) | <descrizione breve> | <stato> |
+<!-- indice:inizio -->
+<!-- indice:fine -->
+
+<!-- La tabella dei documenti la scrive da sola strumenti/indici.py dopo il push. -->

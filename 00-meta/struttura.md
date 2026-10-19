@@ -2,8 +2,9 @@
 titolo: Struttura del repository
 stato: attivo
 creato: 2026-10-15
-aggiornato: 2026-10-16
+aggiornato: 2026-10-19
 tag: [meta, struttura]
+sintesi: "Perché le cartelle sono fatte così e come aggiungerne di nuove"
 ---
 
 # Struttura del repository
@@ -20,7 +21,8 @@ tag: [meta, struttura]
 ```text
 documentazione/
 ├── README.md              ← home e mappa
-├── CLAUDE.md              ← istruzioni per l'assistente AI
+├── CLAUDE.md              ← istruzioni per l'assistente AI (brevi: costano token)
+├── INDICE.md              ← mappa compatta di tutti i documenti (generata)
 ├── 00-meta/               ← regole del repository
 ├── 10-decisioni/          ← registro decisioni (ADR)
 ├── 20-infrastruttura/     ← ambiente di lavoro e strumenti
@@ -29,7 +31,9 @@ documentazione/
 ├── 40-procedure/          ← procedure operative
 ├── 50-progetti/           ← schede progetto
 ├── 90-archivio/           ← documenti superati
-├── _modelli/              ← modelli da copiare
+├── _modelli/              ← modelli da copiare (anche repo-progetto/ per le repo nuove)
+├── strumenti/             ← script: indici, controlli, nuova decisione, nuovo progetto
+├── .kg.yml                ← come questa repo entra nel grafo del second brain
 ├── .github/               ← controlli automatici e modello di PR
 ├── .devcontainer/         ← ambiente Codespaces per modificare la documentazione
 ├── .markdownlint-cli2.jsonc ← regole di formato Markdown
@@ -42,7 +46,10 @@ documentazione/
 A ogni push e pull request, GitHub Actions ([`controlli.yml`](../.github/workflows/controlli.yml)) verifica:
 
 - **formato Markdown** con markdownlint;
-- **link interni** con lychee: segnala file o titoli inesistenti.
+- **link interni** con lychee: segnala file o titoli inesistenti;
+- **metadati** con `strumenti/controlla.py`: campi obbligatori, stati, date, numeri delle decisioni.
+
+E rigenera da sé ([`indici.yml`](../.github/workflows/indici.yml)) gli indici delle sezioni, il registro delle decisioni e `INDICE.md`, poi avvisa il second brain di aggiornare il grafo.
 
 Una volta al mese [`revisioni-sicurezza-web.yml`](../.github/workflows/revisioni-sicurezza-web.yml) controlla le date di revisione della sezione [Sicurezza web](../25-sicurezza-web/README.md) e apre una issue se qualcosa è scaduto.
 

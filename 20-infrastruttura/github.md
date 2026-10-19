@@ -2,8 +2,9 @@
 titolo: GitHub
 stato: attivo
 creato: 2026-10-15
-aggiornato: 2026-10-15
+aggiornato: 2026-10-19
 tag: [infrastruttura, github]
+sintesi: "Account, repository, convenzioni"
 collegati: [0002]
 ---
 
@@ -21,9 +22,10 @@ Decisione di riferimento: [0002 · GitHub come base unica di lavoro](../10-decis
 | --- | --- | --- | --- |
 | [`documentazione`](https://github.com/voltalacarta/documentazione) | Documentazione generale e decisioni | **pubblico** (da valutare) | attivo |
 | [`second-brain`](https://github.com/voltalacarta/second-brain) | Note personali (vedi [0004](../10-decisioni/0004-second-brain-markdown-su-github.md)) | **privato** | attivo |
+| `rt2` | Da definire (trovata dalla scoperta automatica, ancora vuota) | pubblico | vuota |
 | `dotfiles` | Configurazioni personali per Codespaces | pubblico o privato | da creare |
 
-Aggiorna questa tabella ogni volta che si crea, rinomina o archivia un repository.
+L'elenco sempre aggiornato, con i contenuti di ogni repo, è nel [grafo del second brain](https://github.com/voltalacarta/second-brain/blob/main/grafo.md): ogni repo nuova vi compare da sola.
 
 ## Convenzioni per i repository
 
@@ -32,6 +34,16 @@ Aggiorna questa tabella ogni volta che si crea, rinomina o archivia un repositor
 - Ramo principale: `main`.
 - Repository di codice: protezione di `main`, modifiche tramite pull request, Dependabot attivo.
 - Repository di codice: `.devcontainer/devcontainer.json` per Codespaces (vedi [ambiente cloud](ambiente-cloud.md)).
+- **Ogni progetto nuovo nasce dal modello** (indici automatici, decisioni, controlli, collegamento al grafo): vedi [nuovo progetto](../40-procedure/nuovo-progetto.md).
+
+## Segreti delle Actions
+
+| Segreto | Dove | A cosa serve |
+| --- | --- | --- |
+| `KG_TOKEN` | `second-brain` | Sola lettura su tutte le repo: fa entrare nel grafo anche le **private** |
+| `KG_AVVISO` | Facoltativo, nelle altre repo | Scrittura solo su `second-brain`: dopo un push il grafo si aggiorna subito invece che entro 3 ore |
+
+Come crearli: [collegare le repo al grafo](../40-procedure/collegare-le-repo-al-grafo.md).
 
 ## Integrazione con Claude
 

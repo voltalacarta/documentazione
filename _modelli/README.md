@@ -10,3 +10,4 @@ Modelli da copiare per creare un nuovo documento. Copia il file, rinominalo seco
 | [progetto.md](progetto.md) | Una scheda progetto | `50-progetti/` |
 | [scheda-sicurezza-web.md](scheda-sicurezza-web.md) | Una scheda della knowledge base di sicurezza web | `25-sicurezza-web/` |
 | [indice-sezione.md](indice-sezione.md) | Il `README.md` di una nuova cartella | Ogni nuova cartella |
+| [repo-progetto/](repo-progetto/README.md) | Una repo di progetto completa | Una repo nuova, con `strumenti/nuovo-progetto.py` |

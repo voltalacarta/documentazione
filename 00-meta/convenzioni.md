@@ -2,8 +2,9 @@
 titolo: Convenzioni di scrittura
 stato: attivo
 creato: 2026-10-15
-aggiornato: 2026-10-15
+aggiornato: 2026-10-19
 tag: [meta, convenzioni]
+sintesi: "Nomi dei file, intestazioni, stati, link, commit"
 ---
 
 # Convenzioni di scrittura
@@ -33,10 +34,14 @@ stato: bozza          # vedi tabella stati
 creato: AAAA-MM-GG
 aggiornato: AAAA-MM-GG
 tag: [parola, altra-parola]
+sintesi: Una riga che dice di cosa parla il documento.
 ---
 ```
 
-Campi facoltativi: `responsabile`, `sostituisce`, `sostituito-da`, `collegati`.
+- **`sintesi`** (consigliato): una frase, al massimo 200 caratteri. Compare negli indici, in `INDICE.md` e nel grafo. Se manca, viene presa in automatico la prima frase del documento.
+- Facoltativi: `responsabile`, `sostituisce`, `sostituito-da`, `collegati` (numeri di decisioni), `concetti` (parole chiave in più per il grafo), `prossima_revisione`.
+
+Il controllo automatico (`strumenti/controlla.py`) verifica campi, stati e date a ogni push.
 
 ### Stati
 
@@ -47,6 +52,18 @@ Campi facoltativi: `responsabile`, `sostituisce`, `sostituito-da`, `collegati`.
 | `attivo` / `accettato` | In vigore. `accettato` si usa per le decisioni, `attivo` per gli altri documenti |
 | `superato` | Sostituito da un altro documento (indicare `sostituito-da`) |
 | `archiviato` | Non più rilevante; spostato in `90-archivio/` |
+
+## Parti generate automaticamente
+
+Non vanno modificate a mano: vengono riscritte a ogni push.
+
+| Cosa | Generato da |
+| --- | --- |
+| Tabelle tra `<!-- indice:inizio -->` e `<!-- indice:fine -->` nei `README.md` | `strumenti/indici.py` |
+| Registro in `10-decisioni/README.md` (marcatore `indice:inizio decisioni`) | `strumenti/indici.py` |
+| `INDICE.md`, mappa compatta di tutti i documenti | `strumenti/indici.py` |
+
+Per far indicizzare una cartella nuova basta mettere i due marcatori nel suo `README.md`.
 
 ## Link
 

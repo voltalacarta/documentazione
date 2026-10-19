@@ -2,8 +2,9 @@
 titolo: Aggiornare la documentazione
 stato: attivo
 creato: 2026-10-15
-aggiornato: 2026-10-15
+aggiornato: 2026-10-19
 tag: [procedure, documentazione]
+sintesi: "Aggiungere o modificare un documento in questo repository"
 collegati: [0001]
 ---
 
@@ -40,13 +41,14 @@ Basta descrivere cosa è stato deciso o cosa va documentato. Claude sceglie la s
 ## Passi comuni
 
 1. **Scegli la sezione** (vedi la mappa nel [README](../README.md)).
-2. **Copia il modello** da [`_modelli/`](../_modelli/README.md).
-3. **Compila il frontmatter**: titolo, stato, date, tag.
+2. **Crea il file:** per una decisione `python3 strumenti/nuova-decisione.py "Titolo"`; per il resto copia il modello da [`_modelli/`](../_modelli/README.md).
+3. **Compila il frontmatter**: titolo, stato, date, tag e una `sintesi` di una riga.
 4. **Scrivi il contenuto** seguendo lo [stile](../00-meta/convenzioni.md#stile).
-5. **Aggiorna l'indice** della sezione (il suo `README.md`).
-6. **Se è una decisione**, aggiungila anche alla tabella in [`10-decisioni/README.md`](../10-decisioni/README.md).
-7. **Commit** con il [formato previsto](../00-meta/convenzioni.md#messaggi-di-commit).
+5. **Controlla:** `python3 strumenti/controlla.py` (lo rifà comunque l'Action).
+6. **Commit** con il [formato previsto](../00-meta/convenzioni.md#messaggi-di-commit) e push.
+
+Non serve toccare gli indici: tabelle delle sezioni, registro delle decisioni e `INDICE.md` li rigenera l'Action **Aggiorna gli indici**; poco dopo il documento compare anche nel [grafo del second brain](../30-conoscenza/second-brain.md).
 
 ## Verifica
 
-Dopo il push, la scheda *Actions* del repository mostra l'esito dei controlli automatici (formato Markdown e link). Se un controllo fallisce, il dettaglio indica file e riga da correggere.
+Dopo il push, la scheda *Actions* del repository mostra l'esito dei controlli automatici (formato Markdown, link, metadati) e dell'aggiornamento degli indici. Se un controllo fallisce, il dettaglio indica file e riga da correggere.

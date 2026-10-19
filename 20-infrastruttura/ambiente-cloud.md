@@ -4,6 +4,7 @@ stato: attivo
 creato: 2026-10-15
 aggiornato: 2026-10-15
 tag: [infrastruttura, codespaces, cloud-shell, cloud]
+sintesi: "Codespaces, github.dev, Cloud Shell, costi"
 collegati: [0003, 0005]
 ---
 

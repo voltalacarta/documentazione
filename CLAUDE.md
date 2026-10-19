@@ -1,29 +1,24 @@
-# Istruzioni per Claude
+# Claude · regole della documentazione
 
-Questo repository è la **fonte unica di verità** della documentazione generale di Volta la carta. Tutto ciò che viene deciso finisce qui.
+Fonte unica di verità di Volta la carta: **tutto ciò che viene sancito finisce qui** (o nella repo del progetto).
 
-## Prima di scrivere
+## Spendere pochi token
 
-- Leggi [`00-meta/convenzioni.md`](00-meta/convenzioni.md) e [`00-meta/struttura.md`](00-meta/struttura.md).
-- Scrivi in **italiano**, frasi brevi.
+1. **Non esplorare.** Orientati con `INDICE.md` (una riga per file: percorso · titolo · stato · sintesi) o `grep -i "parola" INDICE.md`. Apri solo i file che servono.
+2. **Non aggiornare a mano** indici, registro delle decisioni e `INDICE.md`: dopo il push li rigenera l'Action *Aggiorna gli indici*.
+3. Clone superficiale: `git clone --depth 1`. Leggi `00-meta/convenzioni.md` solo se hai un dubbio di forma.
 
-## Quando l'utente "sancisce" qualcosa
+## Quando l'utente sancisce qualcosa
 
-1. Crea una decisione in `10-decisioni/` dal modello `_modelli/decisione.md`, con il numero successivo libero.
-2. Se servono dettagli operativi, aggiorna o crea il documento nella sezione giusta (`20-` com'è fatto, `40-` come si fa) e collegalo.
-3. Aggiorna gli indici: `README.md` della sezione e, per le decisioni, la tabella in `10-decisioni/README.md`.
-4. Se tocca un progetto, aggiorna la scheda in `50-progetti/`.
-5. Aggiorna il campo `aggiornato` nel frontmatter dei file modificati.
+1. `python3 strumenti/nuova-decisione.py "Titolo" --tag a,b --collegati N --sintesi "Una riga."` → crea `10-decisioni/NNNN-….md` con il numero giusto.
+2. Compila Contesto, Decisione, Alternative, Conseguenze. Brevi.
+3. Se servono dettagli operativi: documento in `20-` (com'è fatto) o `40-` (come si fa), collegato alla decisione.
+4. Un progetto nuovo ha una repo propria: `python3 strumenti/nuovo-progetto.py <cartella> --nome … --descrizione …`.
+5. `python3 strumenti/controlla.py`, poi commit `decisione(10): NNNN titolo` e push.
 
 ## Regole fisse
 
-- Non riscrivere decisioni accettate: creane una nuova che le sostituisce e marca la vecchia `superato`.
-- Non cancellare documenti: archiviali in `90-archivio/`.
-- Nomi file: minuscole, trattini, niente accenti.
-- Link relativi; verifica che non si rompano quando sposti file.
-- Mai segreti o dati sensibili nel repository.
-- Messaggi di commit: `tipo(sezione): descrizione` (vedi convenzioni).
-
-## Controlli
-
-Prima del commit esegui `npx markdownlint-cli2 "**/*.md"` e correggi gli errori.
+- Frontmatter: `titolo`, `stato`, `creato`, `aggiornato`, `tag`; consigliato `sintesi` (una riga).
+- Decisioni accettate: mai riscritte. Si crea una nuova con `--sostituisce N` e la vecchia diventa `superato`.
+- Mai cancellare: archiviare in `90-archivio/`. Nomi file minuscoli con trattini. Link relativi.
+- Mai segreti o dati sensibili.

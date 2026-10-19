@@ -1,6 +1,6 @@
 {
   "name": "documentazione",
-  "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
+  "image": "mcr.microsoft.com/devcontainers/python:3.12",
   "customizations": {
     "vscode": {
       "extensions": [
@@ -9,5 +9,9 @@
         "yzhang.markdown-all-in-one"
       ]
     }
-  }
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {}
+  },
+  "postCreateCommand": "pip install --quiet --user pyyaml"
 }

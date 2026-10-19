@@ -4,6 +4,7 @@ stato: attivo
 creato: 2026-10-16
 aggiornato: 2026-10-16
 tag: [sicurezza-web, indice]
+sintesi: "Workflow GitHub Actions"
 ---
 
 # Workflow GitHub Actions

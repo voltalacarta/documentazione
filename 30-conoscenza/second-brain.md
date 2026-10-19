@@ -2,9 +2,10 @@
 titolo: Second brain
 stato: attivo
 creato: 2026-10-15
-aggiornato: 2026-10-16
+aggiornato: 2026-10-19
 tag: [conoscenza, second-brain, obsidian, foam]
-collegati: [0004, 0005]
+sintesi: "Struttura, strumenti e regole del second brain"
+collegati: [0004, 0005, 0007]
 ---
 
 # Second brain
@@ -38,18 +39,53 @@ second-brain/
 ├── .foam/templates/ ← modelli per Foam
 ├── .obsidian/       ← impostazioni condivise di Obsidian
 ├── .vscode/         ← impostazioni di Foam ed estensioni consigliate
-├── .devcontainer/   ← ambiente Codespaces con Foam
-├── .github/         ← Action e script che generano grafo.md
-├── grafo.md         ← grafo delle note, generato in automatico
-└── CLAUDE.md        ← istruzioni per Claude
+├── .devcontainer/   ← Codespace con Foam; apre da solo il grafo interattivo
+├── _config/         ← grafo.yml (impostazioni) e vocabolario.yml (concetti)
+├── .github/kg/      ← il motore del grafo (Python, con i suoi test)
+├── _grafo/          ← GENERATO: pagine di repo e concetti, note-ponte, indici, index.html
+├── grafo.md         ← GENERATO: panoramica con diagramma
+└── CLAUDE.md        ← istruzioni brevi per Claude
 ```
+
+## Il grafo della conoscenza
+
+Decisione di riferimento: [0007 · Grafo della conoscenza automatico](../10-decisioni/0007-grafo-della-conoscenza-automatico-su-tutte-le-repo.md).
+
+Il second brain è l'**hub** che collega tutte le repo di voltalacarta. Una GitHub Action (*Aggiorna il grafo*) gira ogni 3 ore, a ogni push e su avviso delle altre repo. Non usa modelli AI.
+
+| Nodo | Da dove viene |
+| --- | --- |
+| 📦 Repo | Scoperta automatica di tutte le repo del proprietario |
+| Documento | Ogni file `.md` delle altre repo (con una nota-ponte in `_grafo/documenti/`) |
+| Nota | Le note del second brain |
+| Concetto | Tag e campi del frontmatter, vocabolario, glossari, `[[wikilink]]` a note non ancora create |
+
+| Collegamento | Quando |
+| --- | --- |
+| contiene | Una repo contiene un file |
+| link | Un file rimanda a un altro, anche in un'altra repo |
+| collegato | Una decisione cita un'altra nel campo `collegati` |
+| tag | Un file ha quel tag o concetto nel frontmatter |
+| menziona | Il nome di un concetto compare nel testo (al massimo 6 per file, i più frequenti) |
+
+Prodotti, tutti rigenerati a ogni giro (solo i file cambiati):
+
+- [`grafo.md`](https://github.com/voltalacarta/second-brain/blob/main/grafo.md): panoramica Mermaid, leggibile su github.com;
+- `_grafo/repo/`, `_grafo/concetti/`: una pagina per repo e per concetto, con mini-grafo ed elenchi;
+- `_grafo/documenti/`: note-ponte che fanno vedere i documenti delle altre repo nei grafi di Foam e Obsidian;
+- `_grafo/index.html`: grafo interattivo con ricerca e filtri, aperto in automatico nel Codespace;
+- `_grafo/indice.jsonl` e `_grafo/indice.md`: mappa compatta per le ricerche (e per Claude);
+- `_grafo/revisione.md`: manutenzione (inbox da smistare, note da creare, revisioni in scadenza, link rotti);
+- `_grafo/suggerimenti.md`: termini frequenti che possono diventare concetti.
+
+Come far entrare le repo private e altre regolazioni: [collegare le repo al grafo](../40-procedure/collegare-le-repo-al-grafo.md).
 
 ## Strumenti
 
 | Dove | Strumento | Funzioni |
 | --- | --- | --- |
-| Ovunque, senza installare nulla | File **`grafo.md`** su github.com | Grafo dei collegamenti disegnato da GitHub, rigenerato da una GitHub Action a ogni modifica |
-| Browser (completo) | Codespaces + **Foam** | Wikilink, backlink, grafo interattivo, note giornaliere, modelli |
+| Ovunque, senza installare nulla | File **`grafo.md`** su github.com | Panoramica di repo e concetti, con una pagina per ciascuno |
+| Browser (completo) | Codespaces + **Foam** | Wikilink, backlink, grafo di Foam e grafo interattivo del second brain, note giornaliere, modelli |
 | Browser (rapido) | github.dev + Foam | Modifica e link; alcune funzioni possono essere ridotte |
 | Telefono | **Obsidian** + plugin **Git** | Esperienza Obsidian completa |
 | Assistente | **Claude** | Smistare l'inbox, collegare, riassumere |

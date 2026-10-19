@@ -4,6 +4,7 @@ stato: attivo
 creato: 2026-10-15
 aggiornato: 2026-10-16
 tag: [infrastruttura, sicurezza, backup]
+sintesi: "Accessi, segreti, backup"
 collegati: [0002, 0003, 0004]
 ---
 

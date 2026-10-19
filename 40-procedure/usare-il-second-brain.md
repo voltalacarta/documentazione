@@ -4,6 +4,7 @@ stato: attivo
 creato: 2026-10-15
 aggiornato: 2026-10-15
 tag: [procedure, second-brain, foam, obsidian]
+sintesi: "Foam nel browser, Obsidian sul telefono, routine"
 collegati: [0004, 0005]
 ---
 

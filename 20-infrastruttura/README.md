@@ -10,10 +10,15 @@ tag: [infrastruttura, indice]
 
 Com'è fatto l'ambiente di lavoro: piattaforme, strumenti, configurazioni.
 
-| Documento | Contenuto | Stato |
+<!-- indice:inizio -->
+<!-- Generato da strumenti/indici.py: le modifiche qui dentro vengono sovrascritte. -->
+
+| Documento | Sintesi | Stato |
 | --- | --- | --- |
+| [Ambiente di sviluppo cloud](ambiente-cloud.md) | Codespaces, github.dev, Cloud Shell, costi | attivo |
 | [GitHub](github.md) | Account, repository, convenzioni | attivo |
-| [Ambiente cloud](ambiente-cloud.md) | Codespaces, github.dev, Cloud Shell, costi | attivo |
 | [Sicurezza](sicurezza.md) | Accessi, segreti, backup | attivo |
+
+<!-- indice:fine -->
 
 > Sicurezza di siti e applicazioni: sezione [25 · Sicurezza web](../25-sicurezza-web/README.md).

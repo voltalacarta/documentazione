@@ -10,7 +10,12 @@ tag: [sicurezza-web, indice]
 
 Indice della cartella. Torna alla [sezione Sicurezza web](../README.md).
 
-| Documento | Stato |
-| --- | --- |
-| [DevSecOps — sicurezza nel ciclo di sviluppo](devsecops.md) | attivo |
-| [Testing di sicurezza](testing-di-sicurezza.md) | attivo |
+<!-- indice:inizio -->
+<!-- Generato da strumenti/indici.py: le modifiche qui dentro vengono sovrascritte. -->
+
+| Documento | Sintesi | Stato |
+| --- | --- | --- |
+| [DevSecOps — sicurezza nel ciclo di sviluppo](devsecops.md) | La sicurezza costa meno quanto prima entra nel processo ("shift left"), ma non finisce al rilascio: serve anche in esercizio ("shield right"). | attivo |
+| [Testing di sicurezza](testing-di-sicurezza.md) | Nessuno strumento trova tutto. SAST e SCA trovano problemi nel codice e nelle dipendenze, DAST trova problemi nell'applicazione in esecuzione, il penetration test umano trova i… | attivo |
+
+<!-- indice:fine -->

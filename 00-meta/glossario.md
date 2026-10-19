@@ -2,8 +2,9 @@
 titolo: Glossario
 stato: attivo
 creato: 2026-10-15
-aggiornato: 2026-10-15
+aggiornato: 2026-10-19
 tag: [meta, glossario]
+sintesi: "Termini usati nella documentazione"
 ---
 
 # Glossario
@@ -23,8 +24,11 @@ Termini in ordine alfabetico. Aggiungine di nuovi quando compaiono nella documen
 | **Foam** | Estensione di VS Code che aggiunge funzioni stile Obsidian (wikilink, backlink, grafo) a una cartella Markdown. |
 | **Frontmatter** | Blocco iniziale tra `---` con i metadati del documento. |
 | **github.dev** | Editor leggero nel browser, si apre premendo `.` su un repository GitHub. Senza terminale. |
+| **Grafo della conoscenza** | La mappa, generata in automatico nel second brain, che collega repo, documenti, note e concetti. |
+| **Indice compatto** | File generato con una riga per documento (`INDICE.md`, `_grafo/indice.jsonl`): Claude lo legge al posto dei file per spendere meno token. |
 | **Markdown** | Formato di testo semplice con una sintassi minima per titoli, elenchi e link. |
 | **PARA** | Metodo di organizzazione delle note: Progetti, Aree, Risorse, Archivio. |
 | **Pull request (PR)** | Proposta di modifica da rivedere prima di unirla a `main`. |
 | **Second brain** | Sistema personale di note collegate per conservare e ritrovare conoscenza. |
+| **Vocabolario** | L'elenco dei concetti che il grafo riconosce nel testo di tutte le repo (`second-brain/_config/vocabolario.yml`). |
 | **Wikilink** | Link tra note nella forma `[[nome-nota]]`. |

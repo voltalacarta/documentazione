@@ -1,0 +1,4 @@
+# Impostazioni per il grafo della conoscenza del second brain (facoltative).
+livello: documenti
+escludi:
+  - "INDICE.md"   # mappa generata: elenca tutto, nel grafo sarebbe solo rumore

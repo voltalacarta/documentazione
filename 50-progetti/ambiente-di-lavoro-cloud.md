@@ -2,9 +2,10 @@
 titolo: Ambiente di lavoro cloud
 stato: attivo
 creato: 2026-10-15
-aggiornato: 2026-10-15
+aggiornato: 2026-10-19
 tag: [progetti, infrastruttura, cloud]
-collegati: [0001, 0002, 0003, 0004, 0005]
+sintesi: "Mettere in opera GitHub, Codespaces e second brain"
+collegati: [0001, 0002, 0003, 0004, 0005, 0007]
 ---
 
 # Ambiente di lavoro cloud
@@ -27,12 +28,16 @@ Un ambiente di lavoro "chiavi in mano" interamente nel cloud: documentazione, sv
 | 4 | Preparare struttura, modelli e configurazione Foam/Obsidian del second brain | ✅ fatto |
 | 5 | Creare su GitHub il repository privato `second-brain` e caricare la struttura | ✅ fatto |
 | 5b | Decidere la visibilità di `documentazione` (oggi pubblico) | ⏳ da fare |
+| 5c | Grafo della conoscenza automatico su tutte le repo (decisione 0007) | ✅ fatto |
+| 5d | Indici, registro e mappa compatta automatici in `documentazione` | ✅ fatto |
+| 5e | Modello per le repo dei nuovi progetti | ✅ fatto |
+| 5f | Creare il token `KG_TOKEN` per far entrare nel grafo le repo private | ⏳ da fare (utente) |
 | 6 | Proteggere l'account GitHub (2FA/passkey) | ⏳ da fare |
 | 7 | Applicare le impostazioni di costo di Codespaces | ⏳ da fare |
 | 8 | Creare il repository `dotfiles` | ⏳ da fare |
 | 9 | Definire lo stack e il `devcontainer.json` dei progetti di codice | ⏳ da fare |
 | 10 | Decidere metodo e frequenza del backup | ⏳ da fare |
-| 11 | Decidere le automazioni (nota giornaliera, revisione settimanale) | ⏳ da fare |
+| 11 | Decidere le automazioni (nota giornaliera, revisione settimanale) | 🔶 in parte: manutenzione generata a ogni aggiornamento del grafo |
 
 ## Riferimenti
 

@@ -10,8 +10,13 @@ tag: [sicurezza-web, indice]
 
 Indice della cartella. Torna alla [sezione Sicurezza web](../README.md).
 
-| Documento | Stato |
-| --- | --- |
-| [Cyber Resilience Act (Reg. UE 2024/2847)](cyber-resilience-act.md) | attivo |
-| [GDPR — obblighi di sicurezza per i siti web](gdpr.md) | attivo |
-| [NIS2 in Italia (D.Lgs. 138/2024)](nis2-italia.md) | attivo |
+<!-- indice:inizio -->
+<!-- Generato da strumenti/indici.py: le modifiche qui dentro vengono sovrascritte. -->
+
+| Documento | Sintesi | Stato |
+| --- | --- | --- |
+| [Cyber Resilience Act (Reg. UE 2024/2847)](cyber-resilience-act.md) | ⚠️ Sintesi orientativa, non consulenza legale. | attivo |
+| [GDPR — obblighi di sicurezza per i siti web](gdpr.md) | ⚠️ Sintesi orientativa, non consulenza legale. | attivo |
+| [NIS2 in Italia (D.Lgs. 138/2024)](nis2-italia.md) | ⚠️ Sintesi orientativa, non consulenza legale. | attivo |
+
+<!-- indice:fine -->

@@ -15,6 +15,11 @@ Indice della cartella. Torna alla [sezione Sicurezza web](../../README.md).
 | [`dependabot.yml`](dependabot.yml) | Aggiornamenti automatici con cooldown |
 | [`renovate.json`](renovate.json) | Alternativa a Dependabot |
 
-| Cartella | Contenuto |
-| --- | --- |
-| [workflows/](workflows/README.md) | Workflow GitHub Actions |
+<!-- indice:inizio -->
+<!-- Generato da strumenti/indici.py: le modifiche qui dentro vengono sovrascritte. -->
+
+| Documento | Sintesi | Stato |
+| --- | --- | --- |
+| 📁 [Workflow GitHub Actions](workflows/README.md) | Workflow GitHub Actions | attivo |
+
+<!-- indice:fine -->

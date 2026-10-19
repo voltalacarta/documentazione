@@ -12,8 +12,13 @@ Una scheda per ogni progetto: obiettivo, stato, responsabili, link al repository
 
 Se un progetto richiede più documenti, diventa una sottocartella: `50-progetti/nome-progetto/README.md`.
 
-| Progetto | Obiettivo | Stato |
+<!-- indice:inizio -->
+<!-- Generato da strumenti/indici.py: le modifiche qui dentro vengono sovrascritte. -->
+
+| Documento | Sintesi | Stato |
 | --- | --- | --- |
-| [Ambiente di lavoro cloud](ambiente-di-lavoro-cloud.md) | Mettere in opera GitHub, Codespaces e second brain | in corso |
+| [Ambiente di lavoro cloud](ambiente-di-lavoro-cloud.md) | Mettere in opera GitHub, Codespaces e second brain | attivo |
+
+<!-- indice:fine -->
 
 Progetti chiusi → [`90-archivio/`](../90-archivio/README.md).

@@ -10,8 +10,13 @@ tag: [meta]
 
 Le regole che tengono in ordine questo repository. Vanno lette prima di aggiungere qualcosa.
 
-| Documento | Contenuto |
-| --- | --- |
-| [Convenzioni](convenzioni.md) | Nomi dei file, intestazioni, stati, link, commit |
-| [Struttura](struttura.md) | Perché le cartelle sono fatte così e come aggiungerne di nuove |
-| [Glossario](glossario.md) | Termini usati nella documentazione |
+<!-- indice:inizio -->
+<!-- Generato da strumenti/indici.py: le modifiche qui dentro vengono sovrascritte. -->
+
+| Documento | Sintesi | Stato |
+| --- | --- | --- |
+| [Convenzioni di scrittura](convenzioni.md) | Nomi dei file, intestazioni, stati, link, commit | attivo |
+| [Glossario](glossario.md) | Termini usati nella documentazione | attivo |
+| [Struttura del repository](struttura.md) | Perché le cartelle sono fatte così e come aggiungerne di nuove | attivo |
+
+<!-- indice:fine -->

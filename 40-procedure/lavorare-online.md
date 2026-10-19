@@ -4,6 +4,7 @@ stato: attivo
 creato: 2026-10-15
 aggiornato: 2026-10-15
 tag: [procedure, codespaces, cloud-shell, github-dev]
+sintesi: "Usare github.dev, Codespaces e Cloud Shell"
 collegati: [0003, 0005]
 ---
 
