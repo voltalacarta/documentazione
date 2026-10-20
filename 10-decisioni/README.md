@@ -24,6 +24,7 @@ Qui finisce **tutto ciò che viene sancito**. Una decisione = un file numerato.
 | [0005](0005-strumenti-online-gratuiti.md) | Strumenti online gratuiti per editor e second brain | accettato | 2026-10-15 |
 | [0006](0006-riferimento-sicurezza-web.md) | Knowledge base di sicurezza web come riferimento per i progetti digitali | proposto | 2026-10-16 |
 | [0007](0007-grafo-della-conoscenza-automatico-su-tutte-le-repo.md) | Grafo della conoscenza automatico su tutte le repo | accettato | 2026-10-19 |
+| [0008](0008-app-web-del-second-brain-su-github-pages.md) | App web del second brain su GitHub Pages | accettato | 2026-10-20 |
 
 <!-- indice:fine -->
 
