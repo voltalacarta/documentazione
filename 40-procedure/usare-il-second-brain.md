@@ -2,10 +2,10 @@
 titolo: Usare il second brain
 stato: attivo
 creato: 2026-10-15
-aggiornato: 2026-10-15
+aggiornato: 2026-10-20
 tag: [procedure, second-brain, foam, obsidian]
-sintesi: "Foam nel browser, Obsidian sul telefono, routine"
-collegati: [0004, 0005]
+sintesi: "App web (consigliata), Foam nel browser, Obsidian sul telefono, routine"
+collegati: [0004, 0005, 0008]
 ---
 
 # Usare il second brain
@@ -13,6 +13,35 @@ collegati: [0004, 0005]
 ## Scopo
 
 Scrivere, collegare e ritrovare note nel repository `second-brain`, dal browser o dal telefono.
+
+## App web (consigliata)
+
+Indirizzo: <https://voltalacarta.github.io/second-brain-app/>. Funziona su computer e telefono, e si può aggiungere alla schermata Home.
+
+1. **Token, una volta ogni 90 giorni.** Il link «Come ottengo il token» nella schermata di accesso apre GitHub con quasi tutto già compilato.
+   - **Resource owner:** `voltalacarta`.
+   - **Repository access:** *Only select repositories* → `second-brain`.
+   - **Permissions:** *Contents* **Read and write**; facoltativo *Actions* Read.
+   - **Generate token**, poi copialo.
+2. Incolla il token nell'app.
+   - **Ricorda su questo dispositivo** solo sui tuoi dispositivi.
+   - Senza, il token sparisce quando chiudi la scheda.
+3. Uso:
+
+   | Tasto | Effetto |
+   | --- | --- |
+   | `/` | Cerca note, concetti, idee |
+   | `n` | Nuova nota da un modello di `_modelli/` |
+   | `o` | Nota del giorno in `01-giornaliere/` |
+   | `g` | Grafo completo (un tocco seleziona, il secondo apre) |
+   | `e` | Modifica la nota aperta |
+   | `Ctrl+S` | Salva: fa un commit; il grafo si aggiorna da solo dopo circa un minuto |
+
+4. Scrivi `[[` per collegare un'altra nota. Le attività `- [ ]` si spuntano direttamente nella nota.
+5. Per togliere una nota: menu **⋯ → Archivia**, che la sposta in `40-archivio/`.
+6. Su un dispositivo che non è tuo: menu **⋯ → Esci e dimentica il token**.
+
+Dettagli e motivi: [0008](../10-decisioni/0008-app-web-del-second-brain-su-github-pages.md).
 
 ## Nel browser (Foam)
 

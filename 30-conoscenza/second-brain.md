@@ -2,7 +2,7 @@
 titolo: Second brain
 stato: attivo
 creato: 2026-10-15
-aggiornato: 2026-10-19
+aggiornato: 2026-10-20
 tag: [conoscenza, second-brain, obsidian, foam]
 sintesi: "Struttura, strumenti e regole del second brain"
 collegati: [0004, 0005, 0007]
@@ -13,6 +13,8 @@ collegati: [0004, 0005, 0007]
 Decisioni di riferimento: [0004 · Second brain su GitHub](../10-decisioni/0004-second-brain-markdown-su-github.md) e [0005 · Strumenti online gratuiti](../10-decisioni/0005-strumenti-online-gratuiti.md).
 
 Repository: [`voltalacarta/second-brain`](https://github.com/voltalacarta/second-brain) (**privato**). Uso quotidiano: [Usare il second brain](../40-procedure/usare-il-second-brain.md).
+
+App web: <https://voltalacarta.github.io/second-brain-app/> (codice in [`second-brain-app`](https://github.com/voltalacarta/second-brain-app), pubblica, solo codice). Decisione: [0008](../10-decisioni/0008-app-web-del-second-brain-su-github-pages.md).
 
 ## Differenza con questo repository
 
@@ -111,5 +113,6 @@ Da valutare e, se adottate, registrare come decisione:
 ## Da completare
 
 - [x] Creare il repository privato `second-brain` su GitHub e caricare la struttura (2026-10-15)
-- [ ] Configurare Obsidian mobile con il plugin Git (facoltativo)
+- [x] App web per leggere e scrivere dal browser e dal telefono (2026-10-20)
+- [ ] Configurare Obsidian mobile con il plugin Git (facoltativo, l'app web lo rende quasi superfluo)
 - [ ] Decidere le automazioni
