@@ -2,7 +2,7 @@
 
 <!-- Generato da strumenti/indici.py: le modifiche qui dentro vengono sovrascritte. -->
 
-109 documenti. Una riga per file: `percorso · titolo · stato · sintesi`.
+110 documenti. Una riga per file: `percorso · titolo · stato · sintesi`.
 Per cercare: `grep -i "parola" INDICE.md`, poi apri solo i file trovati.
 
 ## 00-meta
@@ -131,6 +131,7 @@ Per cercare: `grep -i "parola" INDICE.md`, poi apri solo i file trovati.
 
 - 50-progetti/README.md · Progetti · attivo · Una scheda per ogni progetto: obiettivo, stato, responsabili, link al repository di codice.
 - 50-progetti/ambiente-di-lavoro-cloud.md · Ambiente di lavoro cloud · attivo · Mettere in opera GitHub, Codespaces e second brain
+- 50-progetti/piano-digitale.md · Piano digitale di Volta la carta · bozza · Proposta degli strumenti oltre al sito (pagamenti, ordini, CRM, email, pannello prodotti, fatture, numeri) ordinati per impatto sulle vendite.
 - 50-progetti/rilegaretesi-nuovo-sito.md · rilegaretesi.it, nuovo sito · attivo · Nuovo sito di vendita delle tesi rilegate, costruito a parte e pubblicato in staging su GitHub Pages.
 
 ## 90-archivio

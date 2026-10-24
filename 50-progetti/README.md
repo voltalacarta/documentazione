@@ -18,6 +18,7 @@ Se un progetto richiede più documenti, diventa una sottocartella: `50-progetti/
 | Documento | Sintesi | Stato |
 | --- | --- | --- |
 | [Ambiente di lavoro cloud](ambiente-di-lavoro-cloud.md) | Mettere in opera GitHub, Codespaces e second brain | attivo |
+| [Piano digitale di Volta la carta](piano-digitale.md) | Proposta degli strumenti oltre al sito (pagamenti, ordini, CRM, email, pannello prodotti, fatture, numeri) ordinati per impatto sulle vendite. | bozza |
 | [rilegaretesi.it, nuovo sito](rilegaretesi-nuovo-sito.md) | Nuovo sito di vendita delle tesi rilegate, costruito a parte e pubblicato in staging su GitHub Pages. | attivo |
 
 <!-- indice:fine -->
