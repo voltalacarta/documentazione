@@ -2,7 +2,7 @@
 
 <!-- Generato da strumenti/indici.py: le modifiche qui dentro vengono sovrascritte. -->
 
-107 documenti. Una riga per file: `percorso · titolo · stato · sintesi`.
+108 documenti. Una riga per file: `percorso · titolo · stato · sintesi`.
 Per cercare: `grep -i "parola" INDICE.md`, poi apri solo i file trovati.
 
 ## 00-meta
@@ -22,6 +22,7 @@ Per cercare: `grep -i "parola" INDICE.md`, poi apri solo i file trovati.
 - 10-decisioni/0006-riferimento-sicurezza-web.md · Knowledge base di sicurezza web come riferimento per i progetti digitali · proposto · Sono previsti progetti digitali (siti, applicazioni), non ancora definiti.
 - 10-decisioni/0007-grafo-della-conoscenza-automatico-su-tutte-le-repo.md · Grafo della conoscenza automatico su tutte le repo · accettato · Un motore deterministico nel second brain collega tutte le repo, i documenti e i concetti, e mantiene indici compatti per spendere pochi token.
 - 10-decisioni/0008-app-web-del-second-brain-su-github-pages.md · App web del second brain su GitHub Pages · accettato · Un'app statica in una repo pubblica legge e scrive il second brain privato con l'API di GitHub e un token personale; zero dipendenze, CSP rigida.
+- 10-decisioni/0009-rifare-i-siti-rilegaretesi-it-e-voltalacarta-it-per-vendere.md · Rifare i siti rilegaretesi.it e voltalacarta.it per vendere di più · accettato · Rilegaretesi.it si rifà da zero, voltalacarta.it riceve un restyling pesante; obiettivo: vendere di più nei prossimi 5 anni, partendo subito.
 - 10-decisioni/README.md · Registro delle decisioni · attivo · Qui finisce tutto ciò che viene sancito.
 
 ## 20-infrastruttura

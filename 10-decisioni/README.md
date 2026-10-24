@@ -25,6 +25,7 @@ Qui finisce **tutto ciò che viene sancito**. Una decisione = un file numerato.
 | [0006](0006-riferimento-sicurezza-web.md) | Knowledge base di sicurezza web come riferimento per i progetti digitali | proposto | 2026-10-16 |
 | [0007](0007-grafo-della-conoscenza-automatico-su-tutte-le-repo.md) | Grafo della conoscenza automatico su tutte le repo | accettato | 2026-10-19 |
 | [0008](0008-app-web-del-second-brain-su-github-pages.md) | App web del second brain su GitHub Pages | accettato | 2026-10-20 |
+| [0009](0009-rifare-i-siti-rilegaretesi-it-e-voltalacarta-it-per-vendere.md) | Rifare i siti rilegaretesi.it e voltalacarta.it per vendere di più | accettato | 2026-10-24 |
 
 <!-- indice:fine -->
 
