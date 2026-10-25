@@ -15,6 +15,7 @@ Come si raccolgono, organizzano e ritrovano note e appunti.
 
 | Documento | Sintesi | Stato |
 | --- | --- | --- |
+| 📁 [Volta la carta, conoscenza dell'attività](volta-la-carta/README.md) | Tutto quello che sappiamo su Volta la carta e rilegaretesi.it dal questionario del titolare, con le conseguenze per i progetti. | attivo |
 | [Second brain](second-brain.md) | Struttura, strumenti e regole del second brain | attivo |
 
 <!-- indice:fine -->

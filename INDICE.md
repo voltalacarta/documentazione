@@ -2,7 +2,7 @@
 
 <!-- Generato da strumenti/indici.py: le modifiche qui dentro vengono sovrascritte. -->
 
-110 documenti. Una riga per file: `percorso · titolo · stato · sintesi`.
+122 documenti. Una riga per file: `percorso · titolo · stato · sintesi`.
 Per cercare: `grep -i "parola" INDICE.md`, poi apri solo i file trovati.
 
 ## 00-meta
@@ -117,6 +117,18 @@ Per cercare: `grep -i "parola" INDICE.md`, poi apri solo i file trovati.
 
 - 30-conoscenza/README.md · Conoscenza · attivo · Come si raccolgono, organizzano e ritrovano note e appunti.
 - 30-conoscenza/second-brain.md · Second brain · attivo · Struttura, strumenti e regole del second brain
+- 30-conoscenza/volta-la-carta/README.md · Volta la carta, conoscenza dell'attività · attivo · Tutto quello che sappiamo su Volta la carta e rilegaretesi.it dal questionario del titolare, con le conseguenze per i progetti.
+- 30-conoscenza/volta-la-carta/azienda.md · Volta la carta: l'attività · attivo · Storia, persone, marchi, punti di forza e concorrenza, dal questionario del titolare.
+- 30-conoscenza/volta-la-carta/casa-editrice-e-negozio.md · Volta la carta: casa editrice e negozio · attivo · Libri, gadget, negozio ed eventi: cosa fa oggi Volta la carta e cosa vuole diventare.
+- 30-conoscenza/volta-la-carta/clienti.md · Volta la carta: i clienti · attivo · Chi sono i clienti, da dove arrivano, cosa chiedono e cosa li preoccupa.
+- 30-conoscenza/volta-la-carta/comunicazione.md · Volta la carta: comunicazione e immagine · attivo · Social, foto e video, pubblicità, recensioni, logo e storie da raccontare: cosa c'è e cosa si accetta.
+- 30-conoscenza/volta-la-carta/laboratorio.md · Volta la carta: il laboratorio · attivo · Macchine, tempi di lavorazione, capacità, materiali, fornitori e qualità.
+- 30-conoscenza/volta-la-carta/obiettivi-e-vincoli.md · Volta la carta: obiettivi e vincoli · attivo · Cosa vuole il titolare dal progetto, tempi, budget, paure e cose che non devono cambiare.
+- 30-conoscenza/volta-la-carta/ordini-e-spedizioni.md · Volta la carta: ordini, file, pagamenti, fatture e spedizioni · attivo · Come arriva e si gestisce un ordine oggi, i file delle tesi, pagamenti, fatture e corriere.
+- 30-conoscenza/volta-la-carta/prodotti-e-prezzi.md · Volta la carta: prodotti e prezzi · attivo · Cosa si vende, cosa rende, colori più scelti, regole sui prezzi tra web e negozio.
+- 30-conoscenza/volta-la-carta/regole-del-negozio.md · Volta la carta: regole del negozio · attivo · Tempi promessi, errori, resi, annullamenti, privacy e come si risponde ai clienti.
+- 30-conoscenza/volta-la-carta/sito-e-strumenti.md · Volta la carta: sito e strumenti di lavoro · attivo · Il sito di oggi, cosa deve fare quello nuovo, computer, programmi, email e abitudini.
+- 30-conoscenza/volta-la-carta/stagionalita.md · Volta la carta: l'anno e le lauree · attivo · Mesi pieni e vuoti, anticipo degli ordini, date delle lauree.
 
 ## 40-procedure
 
