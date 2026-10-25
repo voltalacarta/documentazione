@@ -2,7 +2,7 @@
 titolo: Piano digitale di Volta la carta
 stato: bozza
 creato: 2026-10-24
-aggiornato: 2026-10-24
+aggiornato: 2026-10-25
 tag: [progetti, piano, vendite, crm, email, gestionale]
 sintesi: "Proposta degli strumenti oltre al sito (pagamenti, ordini, CRM, email, pannello prodotti, fatture, numeri) ordinati per impatto sulle vendite."
 collegati: [0009]
@@ -11,6 +11,8 @@ collegati: [0009]
 # Piano digitale di Volta la carta
 
 Proposta da discutere. Obiettivo, dalla decisione [0009](../10-decisioni/0009-rifare-i-siti-rilegaretesi-it-e-voltalacarta-it-per-vendere.md): vendere di più nei prossimi 5 anni, partendo subito. Ogni voce è giudicata su tre domande: fa vendere di più? fa risparmiare tempo? fa lavorare meglio?
+
+Le risposte del titolare al questionario del 25/10/2026 sono in [Volta la carta, conoscenza dell'attività](../30-conoscenza/volta-la-carta/README.md): partire da lì.
 
 Principio guida: **pochi strumenti, collegati tra loro**. Il Registro VLC (Google Sheets) resta il centro: prodotti, prezzi, ordini e clienti stanno lì o si vedono da lì. Si aggiunge un servizio esterno solo quando il foglio non basta.
 
@@ -34,8 +36,10 @@ Principio guida: **pochi strumenti, collegati tra loro**. Il Registro VLC (Googl
 | Caricamento PDF con conteggio automatico delle facciate | Niente errori sul prezzo, meno email di chiarimento | 1 |
 | Anteprima con il vero frontespizio del cliente | Fa decidere più in fretta: si vede la propria tesi | 1 |
 | Calcolo della data di consegna ("ti arriva entro giovedì 13") con festivi | Il cliente ha una scadenza: dirgli che ce la fa vende | 1 |
-| **Consegna urgente** a pagamento | Chi è in ritardo paga volentieri per la velocità | 1 |
-| Ritiro in bottega a Ferrara | Risparmio per gli studenti di Unife; li porta in negozio | 1 |
+| **Ordine entro le 12, spedizione in giornata** in evidenza (oggi gratis; un sovrapprezzo si valuta col titolare) | Chi è in ritardo cerca proprio questo | 1 |
+| Limite di ordini al giorno, con la prima data di spedizione libera | Le tesi le fa una persona sola: 20-25 al giorno | 1 |
+| Dati per la fattura elettronica (P.IVA, codice destinatario) | Clienti con partita IVA ed enti pubblici sono frequenti | 1 |
+| Ritiro in bottega a Ferrara (già possibile, da dire sul sito) | Risparmio per gli studenti di Unife; li porta in negozio | 1 |
 | Extra all'ordine: copia in più per genitori o relatore, carta più pesante, confezione regalo, biglietto | Aumenta lo scontrino medio | 1 |
 | Recensioni vere, chieste dopo la consegna, mostrate sul sito e su Google | Fiducia: oggi il sito non ne ha | 1 |
 | Pagine per città e ateneo ("rilegatura tesi Bologna") e guide (frontespizio, impaginazione) | Visite da Google senza pagare pubblicità | 2 |
@@ -73,17 +77,17 @@ Scheda cliente: nome, email, ateneo, corso, data di laurea, ordini, recensione l
 
 Email del dominio: configurare SPF, DKIM e DMARC su rilegaretesi.it e voltalacarta.it, altrimenti le email automatiche finiscono nello spam.
 
-Assistenza: WhatsApp Business con risposte pronte per le domande frequenti, e una casella condivisa per info@.
+Assistenza: una casella condivisa per info@ con risposte pronte per le domande frequenti. **WhatsApp no**: il titolare preferisce l'email.
 
 ### 4. Bottega e spedizioni
 
-- **Scheda di lavorazione** stampabile, una per ordine, ordinata per scadenza.
-- **Etichette di spedizione** generate dall'ordine (servizi come Sendcloud o l'integrazione del corriere che usate), con tracciamento inviato in automatico.
+- **Scheda di lavorazione** ed **elenco del giorno stampabili**, ordinati per data di laurea: l'elenco resta su carta, uno schermo in laboratorio non serve.
+- **Etichette di spedizione** generate dall'ordine per **GLS** (oggi si fanno a mano sul sito del corriere), con tracciamento inviato in automatico.
 - **Scorte dei materiali**: quante copertine per colore sono rimaste; sotto la soglia arriva un avviso e, a zero, il colore sparisce dal sito.
 
 ### 5. Fatture e conti
 
-- Fatturazione elettronica collegata ai pagamenti (es. Fatture in Cloud o il programma che usate già): ogni ordine pagato genera fattura o corrispettivo.
+- Fatturazione elettronica collegata ai pagamenti: oggi si usa **Konga Lite** (circa 20 ore al mese tra fatture e conti). Prima strada: un'esportazione degli ordini pronta da importare; se non basta, valutare un programma collegabile.
 - Riconciliazione dei pagamenti in un foglio mensile.
 
 ### 6. Numeri
@@ -102,7 +106,7 @@ Statistiche del sito con uno strumento senza cookie (es. Plausible o Umami): nie
 
 - **Galleria delle tesi rilegate** (con il permesso dei clienti): portfolio sul sito e materiale per i social, senza fatica.
 - **Riepilogo della settimana** per chi lavora in bottega: tesi consegnate, recensioni ricevute, frasi dei clienti.
-- Volti e mani della bottega sul sito: chi compra una cosa fatta a mano vuole vedere chi la fa.
+- Le mani e le lavorazioni sul sito (scritta in oro, incollaggio), su copertine di prova e con la musica del titolare: nessuno vuole mostrare il volto, ma il lavoro a mano si vede lo stesso.
 
 ### 8. Volta la carta
 
@@ -116,15 +120,21 @@ Applicare le regole in [25-sicurezza-web](../25-sicurezza-web/) e [backup e cont
 
 | Fase | Contenuto | Obiettivo |
 | --- | --- | --- |
-| 1 · Lancio | Pagamento, caricamento PDF con conteggio facciate, ordini nel Registro e su Drive, email di stato, urgente, ritiro in bottega, extra, recensioni, fatturazione, statistiche | Il nuovo sito sostituisce il vecchio prima della prossima sessione di laurea |
+| 1 · Lancio | Pagamento, caricamento PDF con conteggio facciate e controllo del file, ordini nel Registro e su Drive, email di stato, spedizione in giornata, limite giornaliero, ritiro in bottega, extra, recensioni, dati per la fattura, statistiche | **Online entro metà gennaio 2027**, prima del picco di febbraio e marzo |
 | 2 · Crescita | CRM e automazioni (auguri, magistrale, carrello), pagine per ateneo e guide, codici sconto, scheda di lavorazione, etichette, cruscotto | Più clienti da Google e dal passaparola, meno lavoro manuale |
 | 3 · Consolidamento | Buono regalo, scorte, galleria, restyling di voltalacarta.it, ordini delle librerie | Il sistema regge anche la casa editrice |
 
+## Risposte del titolare (25/10/2026)
+
+| Domanda | Risposta |
+| --- | --- |
+| Chi gestisce gli ordini ogni giorno, e da dove? | Il titolare, dal computer del negozio; per il sito il referente è Piex |
+| Quale corriere? | GLS, etichette fatte sul sito del corriere |
+| Con cosa si fanno le fatture? | Konga Lite |
+| Dove sono le caselle email? | Gmail e Libero |
+| Prossimo picco di lauree | Febbraio-marzo, poi ottobre-dicembre |
+| Budget mensile | Non indicato. Vincolo: non fare debiti e non spendere troppo |
+
 ## Domande aperte
 
-1. Chi gestisce gli ordini ogni giorno, e da dove (computer in bottega, telefono)?
-2. Quale corriere usate oggi, e con quale contratto?
-3. Con cosa fate oggi le fatture elettroniche?
-4. Su quale servizio sono le caselle email di rilegaretesi.it e voltalacarta.it?
-5. Quando cade la prossima sessione di laurea importante per voi? È la scadenza della fase 1.
-6. Che budget mensile è accettabile per i servizi esterni?
+Vedi l'elenco in [Volta la carta, conoscenza dell'attività](../30-conoscenza/volta-la-carta/README.md#domande-ancora-aperte).
